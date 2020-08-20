@@ -2,43 +2,43 @@
 
 An interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
+https://alapsraval.github.io/plotly-interactive-dashboard/
+
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
-## Step 1: Plotly
+D3 library is used to read in `samples.json`.
 
-1. D3 library is used to read in `samples.json`.
+## Step 1: A horizontal bar using Plotly
 
-2. A horizontal bar chart with a dropdown menu is created to display the top 10 OTUs found in that individual.
+* A horizontal bar chart with a dropdown menu is created to display the top 10 OTUs found in that individual.
 
-* `sample_values` used as the values for the bar chart.
+  * `sample_values` used as the values for the bar chart.
 
-* `otu_ids` used as the labels for the bar chart.
+  * `otu_ids` used as the labels for the bar chart.
 
-* `otu_labels` uesd as the hovertext for the chart.
+  * `otu_labels` uesd as the hovertext for the chart.
 
-3. A bubble chart is created to display each sample.
+## Step 2: A bubble chart using Plotly
 
-* `otu_ids` used for the x values.
+* A bubble chart is created to display each sample.
 
-* `sample_values` used for the y values.
+  * `otu_ids` used for the x values.
 
-* `sample_values` used for the marker size.
+  * `sample_values` used for the y values.
 
-* `otu_ids` used for the marker colors.
+  * `sample_values` used for the marker size.
 
-* `otu_labels` used for the text values.
+  * `otu_ids` used for the marker colors.
 
-4. Display the sample metadata, i.e., an individual's demographic information.
+  * `otu_labels` used for the text values.
 
-5. Display each key-value pair from the metadata JSON object somewhere on the page.
-
-6. Update all of the plots any time that a new sample is selected.
-
-Additionally, you are welcome to create any layout that you would like for your dashboard. An example dashboard is shown below:
-
-## Gauge Chart
+## Step 3: Gauge Chart using Plotly
 
 * The [Gauge Chart] (https://plot.ly/javascript/gauge-charts/) is used to plot the weekly washing frequency of the individual.
+
+## Step 4: Metadata and drop down filter using D3
+
+* The sample metadata is displayed under Demographic Info.
 
 * The chart is updated whenever a new sample is selected.
 
