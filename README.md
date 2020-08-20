@@ -6,55 +6,41 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 ## Step 1: Plotly
 
-1. Use the D3 library to read in `samples.json`.
+1. D3 library is used to read in `samples.json`.
 
-2. Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+2. A horizontal bar chart with a dropdown menu is created to display the top 10 OTUs found in that individual.
 
-* Use `sample_values` as the values for the bar chart.
+* `sample_values` used as the values for the bar chart.
 
-* Use `otu_ids` as the labels for the bar chart.
+* `otu_ids` used as the labels for the bar chart.
 
-* Use `otu_labels` as the hovertext for the chart.
+* `otu_labels` uesd as the hovertext for the chart.
 
-  ![bar Chart](static/images/hw01.png)
+3. A bubble chart is created to display each sample.
 
-3. Create a bubble chart that displays each sample.
+* `otu_ids` used for the x values.
 
-* Use `otu_ids` for the x values.
+* `sample_values` used for the y values.
 
-* Use `sample_values` for the y values.
+* `sample_values` used for the marker size.
 
-* Use `sample_values` for the marker size.
+* `otu_ids` used for the marker colors.
 
-* Use `otu_ids` for the marker colors.
-
-* Use `otu_labels` for the text values.
-
-![Bubble Chart](static/images/bubble_chart.png)
+* `otu_labels` used for the text values.
 
 4. Display the sample metadata, i.e., an individual's demographic information.
 
 5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
-![hw](static/images/hw03.png)
-
 6. Update all of the plots any time that a new sample is selected.
 
 Additionally, you are welcome to create any layout that you would like for your dashboard. An example dashboard is shown below:
 
-![hw](static/images/hw02.png)
+## Gauge Chart
 
-## Advanced Challenge Assignment (Optional)
+* The [Gauge Chart] (https://plot.ly/javascript/gauge-charts/) is used to plot the weekly washing frequency of the individual.
 
-The following task is advanced and therefore optional.
-
-* Adapt the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
-
-* You will need to modify the example gauge code to account for values ranging from 0 through 9.
-
-* Update the chart whenever a new sample is selected.
-
-![Weekly Washing Frequency Gauge](static/images/gauge.png)
+* The chart is updated whenever a new sample is selected.
 
 ### About the Data
 
